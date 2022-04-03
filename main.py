@@ -11,14 +11,12 @@ list1 = [] # 儲存所有可能的組合
 for i in range(0,trying):
     listTemp = []
     binary = format(i, "b").zfill(N)
-    for x in binary:
-        listTemp.append(x)
-    list1.append(listTemp)
+    list1.append(binary)
 
 list1.pop(0) # 刪除都是0的組合
 list1.pop(0) # 刪除只有尾巴是1其他都是0的組合
 
-# 可進行計算的整數
+# 可進行計算的組合
 #print(list1)
 
 tot = 0
